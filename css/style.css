@@ -1,0 +1,73 @@
+/*GENERAL*/
+
+body{
+	font-family: font-family: 'Gentium Book Basic', serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 28px;
+	font-weight: 500;
+}
+
+h3{
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.content-wrapper{
+	max-width: 1000px;
+	width: 90%;
+	margin:0 auto;
+	padding: 60px 0;
+}
+
+/*HEADER*/
+
+header{
+	background: url(../images/minimography_006_orig.jpg) no-repeat fixed;
+	text-align: center;
+    padding: 100px 0;
+    background-position: 50%;
+    background-size: cover;
+}
+
+/*PROFILE SECTION*/
+
+.profile{
+	background:whitesmoke;
+}
+
+/*WORK EXPERIENCE SECTION*/
+
+.work-experience{
+	background:whitesmoke;
+}
+
+/*SKILLS SECTION*/
+
+.skills{
+	background:whitesmoke;
+}
+
+/*EDUCATION SECTION*/
+
+.education{
+	background:whitesmoke;
+}
+
+/*CONTACT SECTION*/
+
+.contact{
+	color: whitesmoke;
+	background:dimgray;
+}
+	
