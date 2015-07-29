@@ -8,14 +8,17 @@ body{
 
 h1{
 	font-family: 'Open Sans', sans-serif;
-	font-style: italic;
+	color: whitesmoke;
 	font-size: 48px;
 	font-weight: 700;
 }
 
 h2{
+	font-style: italic;
+	color: whitesmoke;
+	/*text-transform: uppercase;*/
 	font-size: 28px;
-	font-weight: 500;
+	font-weight: 300;
 }
 
 h3{
@@ -33,11 +36,15 @@ h3{
 /*HEADER*/
 
 header{
-	background: url(../images/minimography_006_orig.jpg) no-repeat fixed;
+	background: url(../images/minimography_006_orig.jpg) no-repeat fixed 0% 20% / cover;
 	text-align: center;
     padding: 100px 0;
-    background-position: 50%;
-    background-size: cover;
+}
+
+.header-align{
+	text-align: left;
+	padding-left: 230px;
+	padding-top: 50px;
 }
 
 /*PROFILE SECTION*/
