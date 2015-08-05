@@ -1,9 +1,31 @@
 /*GENERAL*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 
 body{
 	font-family: font-family: 'Gentium Book Basic', serif;
 	font-size: 14px;
 	font-weight: normal;
+	background: url(../images/minimography_006_orig.jpg) no-repeat fixed 0% 20% / cover;
+	text-align: left;
+    padding: 100px 0;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dotted dimgray;
 }
 
 h1{
@@ -33,25 +55,76 @@ h3{
 	padding: 10px 0;
 }
 
+.download{
+	position: fixed;
+	top:0;
+	right: 50px;
+	background: cyan;
+	padding: 25px;
+	color: black;
+	text-decoration: none;
+}
+
 /*HEADER*/
 
-header{
-	background: url(../images/minimography_006_orig.jpg) no-repeat fixed 0% 20% / cover;
-	text-align: center;
-    padding: 100px 0;
-}
+header
 
 .header-align{
 	text-align: left;
 	padding-left: 230px;
 	padding-top: 40px;
+}
 
+header h1{
+	transition: all 0.5s ease;
+	color: whitesmoke;
+}
+
+header h1:hover{
+	color:lime;
+}
+
+header h2 {
+	border: none;
+	background: #2980b9;
+	display: inline-block;
+	padding: 10px 20px;
 }
 
 /*PROFILE SECTION*/
 
 .profile{
-	background:whitesmoke;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.profile-img-container{
+	float: left;
+	width: 27%;
+	margin-right: 3%;
+}
+
+.profile-img-container .profile-img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.summary{
+	float: left;
+	width: 70%;
+	border: 2px dashed red;
+	padding: 10px;
+	margin-top: 25px;
+}
+
+@media(max-width: 750px){
+	.profile-img-container{
+		width:100%;
+	}
+	.summary{
+		width:100%;
+		margin-top: 10px;
+	}
 }
 
 /*PROFESSIONAL DEVELOPMENT SECTION*/
@@ -60,22 +133,98 @@ header{
 	background:whitesmoke;
 }
 
+.courses{
+	width: 20%;
+	height: 150px;
+	background: cyan;
+	float:left;
+	border: 1px solid black;
+	margin-right: 20%;
+}
+
+.courses:last-of-type{
+	margin-right:0;
+}
+
+@media(max-width: 750px){
+	.courses{
+	width: 30%;
+	height: 150px;
+	background: cyan;
+	float:left;
+	border: 1px solid black;
+	margin-right: 5%;
+}
+
+.courses:last-of-type{
+	margin-right:0;
+}
+}
+
 /*WORK EXPERIENCE SECTION*/
 
 .work-experience{
 	background:whitesmoke;
 }
 
+.work-experience .item{
+	border-bottom: 1px dashed dimgray;
+}
+
+.work-experience .item:last-of-type{
+	border-bottom: none;
+}
+
 /*SKILLS SECTION*/
 
 .skills{
-	background:whitesmoke;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../images/minimography_006_orig.jpg) fixed 0% 20% / cover;
+	color:whitesmoke;
+	text-align: left;
+    padding: 100px 0;;
+}
+
+.skills-list .columns{
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+}
+
+.skills-list .columns:last-of-type{
+	margin-right: 0;
+}
+
+@media(max-width:600px){
+	.skills-list .columns{
+		width:50%;
+		margin-right:0;
+	}
+	.skills-list .columns:last-of-type{
+		width:100%;
+	}
 }
 
 /*EDUCATION SECTION*/
 
 .education{
 	background:whitesmoke;
+}
+
+.skills-circles ul li{
+	list-style: none;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	background: whitesmoke;
+	border: 2px solid black;
+	border-radius: 50%;
+	line-height: 150px;
+	text-align: center;
+	color: black;
+}
+
+.skills-circles ul li:last-of-type{
+	margin-right: 0;
 }
 
 /*CONTACT SECTION*/
