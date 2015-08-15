@@ -17,9 +17,9 @@ body{
 	font-family: font-family: 'Gentium Book Basic', serif;
 	font-size: 14px;
 	font-weight: normal;
-	background: url(../images/minimography_006_orig.jpg) no-repeat fixed 0% 20% / cover;
+	background: url(../images/lollipop.jpg) fixed 0% 25% / cover;
 	text-align: left;
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 a{
@@ -29,10 +29,11 @@ a{
 }
 
 h1{
-	font-family: 'Open Sans', sans-serif;
-	color: whitesmoke;
-	font-size: 48px;
-	font-weight: 700;
+	font-family: 'Pacifico', cursive;
+	color: black;
+	font-size: 72px;
+	font-weight: 300;
+	margin-bottom: 0px;
 }
 
 h2{
@@ -57,38 +58,33 @@ h3{
 
 .download{
 	position: fixed;
-	top:0;
+	bottom: 25px;
 	right: 50px;
-	background: cyan;
-	padding: 25px;
-	color: black;
+	padding: 5px;
+	color: dimgray;
+	background: whitesmoke;
 	text-decoration: none;
+    width: 175px;
+    height: 30px; 
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.download:hover{
+	background:black;
+	color:white;
 }
 
 /*HEADER*/
 
 header
 
-.header-align{
-	text-align: left;
-	padding-left: 230px;
+.header{
+	height: 300px;
+	text-align: center;
 	padding-top: 40px;
-}
-
-header h1{
-	transition: all 0.5s ease;
-	color: whitesmoke;
-}
-
-header h1:hover{
-	color:lime;
-}
-
-header h2 {
-	border: none;
-	background: #2980b9;
-	display: inline-block;
-	padding: 10px 20px;
+	padding-bottom: 40px;
+	margin:0px;
 }
 
 /*PROFILE SECTION*/
@@ -109,18 +105,24 @@ header h2 {
 	border-radius: 50%;
 }
 
+.summary h3{
+	font-size: 48px;
+	margin: 0px;
+}
+
 .summary{
 	float: left;
 	width: 70%;
-	border: 2px dashed red;
 	padding: 10px;
 	margin-top: 25px;
+	color:whitesmoke;
 }
 
 @media(max-width: 750px){
 	.profile-img-container{
 		width:100%;
 	}
+
 	.summary{
 		width:100%;
 		margin-top: 10px;
@@ -135,11 +137,17 @@ header h2 {
 
 .courses{
 	width: 20%;
-	height: 150px;
-	background: cyan;
+	height: 75px;
 	float:left;
 	border: 1px solid black;
 	margin-right: 20%;
+	padding: 15px;
+	color: dimgray;
+	text-decoration: none;
+	border-radius: 15px;
+    border: 2px solid dimgray;
+    text-align: center;
+    transition: all 0.5s ease;
 }
 
 .courses:last-of-type{
@@ -178,10 +186,10 @@ header h2 {
 /*SKILLS SECTION*/
 
 .skills{
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../images/minimography_006_orig.jpg) fixed 0% 20% / cover;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../images/sunset.jpg) fixed 0% 20% / cover;
 	color:whitesmoke;
 	text-align: left;
-    padding: 100px 0;;
+    padding: 100px 0;
 }
 
 .skills-list .columns{
