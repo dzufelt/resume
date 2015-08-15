@@ -194,11 +194,19 @@ header
 
 /*SKILLS SECTION*/
 
+.skills h2{
+	color: whitesmoke;
+	margin-left: 30px;
+}
+
+.skills li{
+	color: whitesmoke;
+}
+
 .skills{
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../images/sunset.jpg) fixed 0% 20% / cover;
-	color:whitesmoke;
+	background-color: dimgray;
 	text-align: left;
-    padding: 100px 0;
+    padding: 0px 0;
 }
 
 .skills-list .columns{
@@ -213,7 +221,7 @@ header
 
 @media(max-width:600px){
 	.skills-list .columns{
-		width:50%;
+		width:100%;
 		margin-right:0;
 	}
 	.skills-list .columns:last-of-type{
@@ -224,30 +232,13 @@ header
 /*EDUCATION SECTION*/
 
 .education{
-	background:whitesmoke;
-}
-
-.skills-circles ul li{
-	list-style: none;
-	width: 150px;
-	height: 150px;
-	display: inline-block;
 	background: whitesmoke;
-	border: 2px solid black;
-	border-radius: 50%;
-	line-height: 150px;
-	text-align: center;
-	color: black;
-}
-
-.skills-circles ul li:last-of-type{
-	margin-right: 0;
 }
 
 /*CONTACT SECTION*/
 
 .contact{
 	color: whitesmoke;
-	background:dimgray;
+	background: url(../images/sunset.jpg) fixed 0% 0% / cover;
 }
 	
