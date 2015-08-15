@@ -17,7 +17,7 @@ body{
 	font-family: 'Gentium Book Basic', serif;
 	font-size: 18px;
 	font-weight: lighter;
-	background: url(../images/lollipop.jpg) fixed 0% 25% / cover;
+	background: url(../images/lollipop.jpg) no-repeat fixed 0% 25% / cover;
 	text-align: left;
     padding: 10px 0;
 }
@@ -146,13 +146,14 @@ header
 
 .courses{
 	width: 20%;
-	height: 75px;
+	height: 100px;
+	font-size: 14px;
+	background: rgba(105, 105, 105, 0.6);
 	float:left;
 	border: 1px solid black;
 	margin-right: 20%;
-	padding: 15px;
-	color: dimgray;
-	text-decoration: none;
+	padding-top: 30px;
+	color: whitesmoke;
 	border-radius: 15px;
     border: 2px solid dimgray;
     text-align: center;
@@ -163,11 +164,15 @@ header
 	margin-right:0;
 }
 
+.courses:hover{
+	background: black;
+}
+
 @media(max-width: 750px){
 	.courses{
 	width: 30%;
-	height: 150px;
-	background: cyan;
+	height: 100px;
+	padding-top: 30px;
 	float:left;
 	border: 1px solid black;
 	margin-right: 5%;
@@ -219,7 +224,7 @@ header
 	margin-right: 0;
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
 	.skills-list .columns{
 		width:100%;
 		margin-right:0;
@@ -240,5 +245,17 @@ header
 .contact{
 	color: whitesmoke;
 	background: url(../images/sunset.jpg) fixed 0% 0% / cover;
+}
+
+.contact .fa-twitter{
+	color: #67AEEB;
+}
+
+.contact .fa-linkedin{
+	color: #3488BD;
+}
+
+.contact a{
+	color: whitesmoke;
 }
 	
