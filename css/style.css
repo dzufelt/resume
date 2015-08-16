@@ -246,6 +246,10 @@ header
 	background: url(../images/sunset.jpg) fixed 0% 0% / cover;
 }
 
+.contact a{
+	color: whitesmoke;
+}
+
 .contact .fa-twitter{
 	color: #67AEEB;
 }
@@ -254,7 +258,11 @@ header
 	color: #3488BD;
 }
 
-.contact a{
+.contact .fa-github{
 	color: whitesmoke;
+}
+
+.contact a{
+	border-bottom: none;
 }
 	
